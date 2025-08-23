@@ -8,7 +8,8 @@ A sleek, dynamic, and responsive to-do list application built with vanilla JavaS
 -Edit Tasks: Click the edit button to modify existing tasks.
 -Delete Tasks: Remove any task individually.
 -Progress Bar: A visual progress bar at the top automatically updates its width to show your completion rate.
--Clear All Completed tasks: A "Clear Completed tasks" button appears  when all tasks are marked as valid. -----Click it to remove all tasks and trigger a fun confetti animation as a reward!
+-Clear All Completed tasks: A "Clear Completed tasks" button appears  when all tasks are marked as valid
+ ,click it to remove all tasks and trigger a fun confetti animation as a reward!
 -Data Persistence: Your tasks are automatically saved in your browser's local storage. They will still be      there when you come back!
 -Fully Responsive: Works seamlessly on desktop, tablet, and mobile devices.
 
