@@ -4,7 +4,7 @@ A sleek, dynamic, and responsive to-do list application built with vanilla JavaS
 
 🚀 Features
 -Add New Tasks: Quickly add tasks to your list.
--Mark Tasks as Valid/Complete: Click the checkmark (→) to mark a task as done. It turns green and gets         crossed out.
+-Mark Tasks as Valid/Complete: Click the checkmark  to mark a task as done. It turns green and gets         crossed out.
 -Edit Tasks: Click the edit button to modify existing tasks.
 -Delete Tasks: Remove any task individually.
 -Progress Bar: A visual progress bar at the top automatically updates its width to show your completion rate.
