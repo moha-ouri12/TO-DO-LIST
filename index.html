@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="master.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div id="alert1" class="d-none justify-content-center">
+        <div class="alert  alert-dismissible  alert-fixed " style=" background-color: rgb(20, 3, 50); position: fixed;color:rgb(113, 37, 37); text-align: center;">
+         <span id="textoo">  Task deleted  </span> 
+         <button class="btn-close fs-7 custom-color "  aria-label="close" onclick="hideAlert()" ></button>
+       </div>
+    </div>
+    <div class="container-fluid  d-flex   justify-content-center align-items-start  py-5" style="min-height: 100vh; background-image:url(image/desktop-wallpaper-background-css-css-background-gradient.jpg);background-size:cover;">
+        <div class=" rounded-5  d-flex flex-column  w-75  p-5   " style="box-shadow: 0px 0 100px rgba(0, 0, 0, 0.5); position: relative;">
+            <h1 class="d-flex justify-content-center fs-1 fw-bold text-white ">To-Do-App </h1>
+            <br><br>
+            <div class=" d-flex flex-row  px-3 gap-3" style="box-shadow: 0 0 30px rgba(189, 188, 188, 0.5); border:3px  solid rgba(40, 41, 44, 0.18); border-radius:20px; ">
+               <div class="flex-grow-1 d-flex flex-column py-4 gap-3" style="flex-basis: 60%;">
+                  <span class="d-flex justify-content-start ps-4 fs-4 text-white">Keep it Up !</span>
+                  <div class="rounded-3  w-100 " style=" height: 30px; box-shadow: 0px 0 100px rgba(0, 0, 0, 0.5);  background-color: rgba(255,194,209,0.3); ">
+                      <div id="prr" class="rounded-3 " style="height: 100%; transition: 0.90s width; background-color: rgb(226, 99, 129);"></div>  
+                  </div>
+               </div>
+               <span id="topspan" class=" flex-grow-1 d-flex justify-content-center align-items-center fs-2 my-2 text-white "></span>
+            </div>
+            <br><br>
+            <div id="errorMsg" style="color:red; display:none;  padding-left: 10px; font-size: small;">
+                Please enter a value
+            </div>
+            <form onsubmit="return false;">
+                <input id="value" type="text" placeholder="Add a task" style="flex-basis: 80%; height: 60px; border:none; outline:none; border-radius:22px; background: rgba(255,194,209,0.3); text-align: center; ">
+                <button class="btn btnn btn ms-2 " onclick="Newtask();" style="border-radius: 70%; border:none; outline:none; background: rgba(255,194,209,0.3);">
+                <i class="bi bi-plus " style="font-size: 2rem;"></i>
+            </button>
+            </form>
+            <div id="task"></div>
+            <div id="completed" class="border rounded-3 bg-white text-center d-none" style="position: absolute; top: 30px;; right: 0%; cursor: pointer; ">clear<br> completed <br> tasks</div>
+        </div>
+   </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"  crossorigin="anonymous"></script>
+    <script src="script.js"></script> 
+</body>
+</html>

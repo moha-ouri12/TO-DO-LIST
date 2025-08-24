@@ -1,0 +1,55 @@
+form{
+    display: flex;
+}
+    
+div[contenteditable]:focus{
+    outline: none;
+    border: none;
+}
+    
+div[contenteditable] {
+    flex-basis: 90%;
+    overflow: scroll;
+}
+    
+div[contenteditable]::-webkit-scrollbar{
+    display: none;
+}
+    
+.diiv{
+    border: none;
+    outline:none;
+    border-radius: 22px;
+    background: rgba(255, 194, 209, 0.3);
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+input::placeholder{
+    color: rgb(125, 9, 84);
+    font-style: italic;
+}
+
+span#topspan{
+    background-color: rgb(226, 99, 129);
+    border-radius: 50%;
+}
+
+.taskdiv{
+    text-decoration: line-through;
+    text-decoration-color: black;
+    text-decoration-thickness: 2px;
+}
+
+@media (max-width: 670px) { 
+  .alert-fixed {
+    width: 50%;
+  }
+}
+
+@media (min-width: 670px) {
+  .alert-fixed {
+    width: 25%;
+  }
+}
